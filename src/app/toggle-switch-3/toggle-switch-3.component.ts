@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ToggleSwitch3ApiService } from '../toggle-switch3-api.service';
 
 @Component({
-  selector: 'app-toggle-switch',
-  templateUrl: './toggle-switch.component.html',
-  styleUrls: ['./toggle-switch.component.css']
+  selector: 'app-toggle-switch-3',
+  templateUrl: './toggle-switch-3.component.html',
+  styleUrl: './toggle-switch-3.component.css'
 })
-export class ToggleSwitchComponent implements OnInit {
+export class ToggleSwitchComponent3 implements OnInit {
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ToggleSwitch3ApiService) { }
 
   ngOnInit(): void {
   }
@@ -17,7 +17,7 @@ export class ToggleSwitchComponent implements OnInit {
     if (event.target instanceof HTMLInputElement) {
       const checked = event.target.checked;
       const status = checked ? 1 : 0;
-      const id = '65e892c16124050600b87598'; // ID del elemento 'foco1'
+      const id = '65f0ad1fefdef611de4c99d0'; // ID del elemento 'foco1'
 
       this.apiService.updateComponentStatus(id, status)
         .subscribe(
@@ -32,3 +32,4 @@ export class ToggleSwitchComponent implements OnInit {
   }
 
 }
+
