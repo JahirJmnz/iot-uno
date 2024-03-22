@@ -16,9 +16,23 @@
 }
 
 /* Estilo de los elementos de la cuadrícula */
-.grid-item {
+.grid-item-green {
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: green;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.grid-item-yellow {
+    padding: 20px;
+    background-color: rgb(231, 231, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.grid-item-red {
+    padding: 20px;
+    background-color: red;
     border-radius: 8px;
     text-align: center;
 }
